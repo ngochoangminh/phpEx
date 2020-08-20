@@ -5,7 +5,6 @@ class App{
     protected $params=[];
 
     function __construct(){
-        echo "co chay app <br/>";
         $arr = $this->urlProcess();
 
         // Controller

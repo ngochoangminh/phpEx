@@ -1,4 +1,6 @@
-.div{
+body{
     width: 900px;
+    margin: 0 auto;
     padding: 10 0;
+    background-color: aliceblue;
 }

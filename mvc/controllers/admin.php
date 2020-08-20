@@ -1,8 +1,8 @@
 <?php
 echo "This is site admin";
-class manage extends Controller{
+class admin extends Controller{
     function manage(){
-        echo "manage";
+        echo "manage is running";
         $md = $this->model("adminmodel");
         $res = $md->manage;
         $this->view("manage", $res);
@@ -13,9 +13,10 @@ class manage extends Controller{
     }
     function edit(){
         echo "this is action edit image detail";
-        $md = $this->model("adminmodel");
-        $res = $md->edit;
-        $this->view("edit", $res);
+        // $md = $this->model("adminmodel");
+        // $res = $md->edit;
+        // $this->view("edit", $res);
+        $this->view("edit", []);
     }
     function delete(){
         echo "this is action delete image";
