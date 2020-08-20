@@ -1,7 +1,7 @@
 <?php
 class App{
-    protected $controller="home";
-    protected $action="sayhi";
+    protected $controller="admin";
+    protected $action="manage";
     protected $params=[];
 
     function __construct(){
