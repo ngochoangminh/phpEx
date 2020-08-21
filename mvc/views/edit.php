@@ -6,10 +6,11 @@
     <title>Edit</title>
 </head>
 <body style="width: 900px;margin-left:auto; margin-right:auto;">
+    <div class="header"><h1><?php echo $ass ?></h1></div>
     <?php
     echo "view edit is running";
     ?>
-    <div>
+    <div class="content">
         <div>
             <h2>Edit</h>
             <ul>
@@ -40,5 +41,6 @@
         </div>
         <button>submit</button>
     </div>
+    <div class="footer" ></div>
 </body>
 </html>

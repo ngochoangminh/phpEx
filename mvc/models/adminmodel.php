@@ -2,12 +2,11 @@
 class adminmodel extends DB{
     public function new(){
         echo "new";
-
     }
 
     public function manage(){
         echo "manage";
-        $qr = "SECLECT * FROM image";
+        $qr = "SECLECT * FROM tets";
         return mysqli_query($this->con, $qr);
     }
     public function edit($ids){
@@ -26,7 +25,8 @@ class adminmodel extends DB{
         $qr = "SELECT * FROM image WHERE id=".$ids;
         return mysqli_query($this->con, $qr);
     }
-    public function add($data=[]){
+    public function upload($data=[]){
+        require_once "./mvc/lib/upload.php";
         $qr = "INSERT INTO image(title, description, image, status) VALUE (".$data.")";
         return mysqli_query($this->con, $qr);
     }

@@ -1,12 +1,23 @@
 <?php
-echo "This is site admin";
+$ass = "This is site admin";
+// require_once "./mvc/views/admin.php";
+// require_once "./mvc/views/manage.php";
 class admin extends Controller{
+    // function __construct()
+    // {
+    //     require_once "./mvc/views/manage.php";
+    // }
     function manage(){
-        echo "manage is running";
-        $md = $this->model("adminmodel");
-        $res = $md->manage;
-        $this->view("manage", $res);
-
+        // echo "manage is running";
+        // $md = $this->model("adminmodel");
+        // $res = $md->manage;
+        // $this->view("manage");
+        // require_once "./mvc/views/manage.php";
+        function __construct()
+        {
+            require_once "./mvc/views/manage.php";
+        }
+        echo "manage";
     }
     function show(){
         echo "this is action show image";
@@ -24,8 +35,12 @@ class admin extends Controller{
         $res = $md->delete();
         $this->view("manage", []);
     }
-    function news(){
-        echo "new image";
+    function upload(){
+        echo "upload new image";
+        
+    }
+    public function view($view){
+        require_once "./mvc/views/".$view.".php";
     }
 }
 ?>

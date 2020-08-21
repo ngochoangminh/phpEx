@@ -4,3 +4,16 @@ body{
     padding: 10 0;
     background-color: aliceblue;
 }
+.header{
+    height: 100px;
+    margin: 0 0 30px 0;
+    background-color: lightskyblue;
+}
+.footer{
+    height: 100px;
+    margin: 30px 0 0 0;
+    background-color: lightblue;
+}
+h1{
+    margin:0 auto;
+}
